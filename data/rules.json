@@ -1,0 +1,55 @@
+{
+  "rules": [
+    {
+      "id": 1,
+      "conditions": {
+        "public_wifi": "yes",
+        "password_protected": "no"
+      },
+      "risk_level": "High",
+      "explanation": "Your Wi-Fi is public and not password protected, making it easy for unauthorized users to connect.",
+      "recommendation": "Enable strong password protection and restrict access to trusted users."
+    },
+    {
+      "id": 2,
+      "conditions": {
+        "public_wifi": "yes",
+        "shared_network": "yes"
+      },
+      "risk_level": "High",
+      "explanation": "Staff and customers share the same public network, increasing the risk of unauthorized access to internal systems.",
+      "recommendation": "Separate staff and customer networks to reduce exposure."
+    },
+    {
+      "id": 3,
+      "conditions": {
+        "router_age": "older_than_5_years"
+      },
+      "risk_level": "Medium",
+      "explanation": "Your router is more than five years old and may lack modern security updates.",
+      "recommendation": "Consider upgrading to a newer router that receives regular security updates."
+    },
+    {
+      "id": 4,
+      "conditions": {
+        "public_wifi": "no",
+        "password_protected": "yes",
+        "shared_network": "no",
+        "router_age": "newer_than_2_years"
+      },
+      "risk_level": "Low",
+      "explanation": "Your Wi-Fi setup follows common security best practices and presents a low level of risk.",
+      "recommendation": "Continue maintaining strong passwords and keeping your equipment updated."
+    },
+    {
+      "id": 5,
+      "conditions": {
+        "public_wifi": "no",
+        "password_protected": "yes"
+      },
+      "risk_level": "Low",
+      "explanation": "Your Wi-Fi setup follows common security best practices and presents a low level of risk.",
+      "recommendation": "Continue maintaining strong passwords and keeping your equipment updated."
+    }
+  ]
+}
