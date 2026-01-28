@@ -12,8 +12,9 @@
 
     <style>
         body {
-            background: url("/static/images/wifi-bg.jpg") no-repeat center center fixed;
+            background: url("{{ url_for('static, filename='images/background.jpg) }}");
             background-size: cover;
+            background-repeat: no-repeat;
         }
 
         .overlay {
